@@ -8,15 +8,17 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
+import Button from '@material-ui/core/Button';
 
 import { AmplifySignOut } from '@aws-amplify/ui-react';
+import { Auth } from 'aws-amplify';
 
 const useStyles = makeStyles(theme => ({
 	root: {
 		flexGrow: 1
 	},
 	menuButton: {
-		marginRight: theme.spacing(2)
+		marginRight: theme.spacing(4)
 	},
 	title: {
 		flexGrow: 1
@@ -40,15 +42,25 @@ const Header = () => {
 	const handleClose = () => {
 		setAnchorEl(null);
 	};
+	const signOut = async () => {
+		try {
+			await Auth.signOut();
+		} catch (error) {
+			console.log('error', error);
+		}
+	};
 
 	return (
 		<div className={classes.root}>
 			<AppBar position="sticky" style={{ background: '#B49D80', boxShadow: 'none' }}>
 				<Toolbar>
-					<Typography variant="h6" className={classes.title}>
+					<Typography align="left" variant="h6" className={classes.title}>
 						IVAS
 					</Typography>
-					<AmplifySignOut />
+					{/* <AmplifySignOut button-text="Custom Text" /> */}
+					<Button variant="contained" color="#B49D80" onClick={signOut}>
+						Sign Out
+					</Button>
 
 					<>
 						<IconButton
