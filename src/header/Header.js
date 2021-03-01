@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'wouter';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -19,6 +20,11 @@ const useStyles = makeStyles(theme => ({
 	},
 	title: {
 		flexGrow: 1
+	},
+	headerOptions: {
+		display: 'flex',
+		flex: 1,
+		justifyContent: 'space-evenly'
 	}
 }));
 
@@ -37,13 +43,14 @@ const Header = () => {
 
 	return (
 		<div className={classes.root}>
-			<AppBar position="static">
+			<AppBar position="sticky" style={{ background: '#B49D80', boxShadow: 'none' }}>
 				<Toolbar>
 					<Typography variant="h6" className={classes.title}>
 						IVAS
 					</Typography>
 					<AmplifySignOut />
-					<div>
+
+					<>
 						<IconButton
 							onClick={handleMenu}
 							edge="start"
@@ -69,13 +76,21 @@ const Header = () => {
 							open={open}
 							onClose={handleClose}
 						>
-							<MenuItem onClick={handleClose}>About</MenuItem>
-							<MenuItem onClick={handleClose}>Safety</MenuItem>
+							<MenuItem component={Link} to="/about" onClick={handleClose}>
+								About
+							</MenuItem>
+							<MenuItem component={Link} to="/safety" onClick={handleClose}>
+								Safety
+							</MenuItem>
 
-							<MenuItem onClick={handleClose}>Blood Hound</MenuItem>
-							<MenuItem onClick={handleClose}>Soldier Radio</MenuItem>
+							<MenuItem component={Link} to="/bloodhound" onClick={handleClose}>
+								Blood Hound
+							</MenuItem>
+							<MenuItem component={Link} to="/soldierradio" onClick={handleClose}>
+								Soldier Radio
+							</MenuItem>
 						</Menu>
-					</div>
+					</>
 				</Toolbar>
 			</AppBar>
 		</div>

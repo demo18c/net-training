@@ -1,19 +1,21 @@
-import logo from './logo.svg';
+import { Router, Route, Switch } from 'wouter';
+
 import './App.css';
 import Amplify from 'aws-amplify';
 import awsconfig from './aws-exports';
 import { withAuthenticator } from '@aws-amplify/ui-react';
 
-import Header from './components/Header';
-
+import Header from './header/Header';
+import About from './components/About';
 Amplify.configure(awsconfig);
 
 function App() {
 	return (
 		<div className="App">
 			<Header />
-
-			<h1>App</h1>
+			<Switch>
+				<Route path="/About" component={About} />
+			</Switch>
 		</div>
 	);
 }
