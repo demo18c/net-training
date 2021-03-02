@@ -45,9 +45,9 @@ canvas {
 	width: 100%;
 }
 
-body {
+/* body {
 	background-image: url(./images/background.jpg);
-}
+} */
 
 /* .top {
 	background-image: url(./images/background.jpg) no-repeat;
@@ -63,7 +63,8 @@ body {
 } */
 
 .top h1 {
-	color: white;
+	color: antiquewhite;
+	justify-self: center;
 }
 
 .top p {

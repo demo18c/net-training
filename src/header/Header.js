@@ -1,4 +1,5 @@
 import React from 'react';
+// import { useHistory } from 'react-router-dom';
 import { Link } from 'wouter';
 
 //MUI
@@ -37,6 +38,7 @@ const useStyles = makeStyles(theme => ({
 
 const Header = () => {
 	const classes = useStyles();
+	// const history = useHistory();
 	const [anchorEl, setAnchorEl] = React.useState(null);
 	const open = Boolean(anchorEl);
 
@@ -50,6 +52,7 @@ const Header = () => {
 	const signOut = async () => {
 		try {
 			await Auth.signOut();
+			// history.push('/');
 		} catch (error) {
 			console.log('error', error);
 		}
@@ -105,13 +108,13 @@ const Header = () => {
 							</MenuItem>
 
 							<MenuItem component={Link} to="/bloodhound" onClick={handleClose}>
-								Blood Hound
+								Hound
 							</MenuItem>
 							<MenuItem component={Link} to="/soldierradio" onClick={handleClose}>
 								Soldier Radio
 							</MenuItem>
 							<MenuItem component={Link} to="/MajorComps" onClick={handleClose}>
-								TRX2RX
+								Components
 							</MenuItem>
 						</Menu>
 					</>

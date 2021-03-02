@@ -5,6 +5,7 @@ import { withAuthenticator } from '@aws-amplify/ui-react';
 
 //css
 import './App.css';
+// import { BackGround } from './styles';
 
 //components
 import Header from './header/Header';
@@ -23,6 +24,7 @@ function App() {
 	return (
 		<>
 			<Header />
+
 			<Switch>
 				<Route path="/About" component={About} />
 				<Route path="/Safety" component={Safety} />
