@@ -51,6 +51,13 @@ body {
 	background-image: url(./images/background.jpg);
 }
 
+/* .top {
+	background-image: url(./images/background.jpg) no-repeat;
+	background-size: cover;
+	min-width: 100%;
+	min-height: 100%;
+} */
+
 /* .bg {
 	position: absolute;
 	width: 100%;
@@ -58,5 +65,9 @@ body {
 } */
 
 .top h1 {
+	color: white;
+}
+
+.top p {
 	color: white;
 }

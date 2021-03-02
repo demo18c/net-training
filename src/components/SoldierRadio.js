@@ -2,7 +2,7 @@ import React from 'react';
 
 function SoldierRadio() {
 	return (
-		<div className="top">
+		<div>
 			<h1>Soldier Radio</h1>
 		</div>
 	);

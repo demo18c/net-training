@@ -11,7 +11,7 @@ const MajorComponents = () => {
 			<OrbitControls />
 			<ambientLight intensity={1} />
 			<pointLight position={[10, 10, 10]} />
-			<axisHelper />
+			{/* <axisHelper /> */}
 			<Suspense fallback={null}>
 				<Environment files="royal_esplanade_1k.hdr" />
 				<TRX2 position={[0, 0, 0]} />
