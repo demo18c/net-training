@@ -23,9 +23,9 @@ const MajorComponents = () => {
 				{/* <Stars /> */}
 				<SkyBox />
 				<TRX2 position={[-3, -2, 0]} />
-				{/* <Plane position={[0, -2, 0]} args={[100, 100]} attach="material" rotation={[-Math.PI / 2, 0, 0]}>
-					<meshBasicMaterial color="#7cfc00" />
-				</Plane> */}
+				<Plane position={[0, -5, 0]} args={[100, 100]} attach="material" rotation={[-Math.PI / 2, 0, 0]}>
+					<meshBasicMaterial color="#fff" />
+				</Plane>
 				<Tent rotation={[0, Math.PI / 2, 0]} scale={[20, 20, 20]} />
 			</Suspense>
 		</Canvas>

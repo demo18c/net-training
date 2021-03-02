@@ -67,7 +67,7 @@ const Header = () => {
 			>
 				<Toolbar>
 					<Typography align="left" variant="h6" className={classes.title}>
-						"S"-VAS
+						LENS
 					</Typography>
 					{/* <AmplifySignOut button-text="Custom Text" /> */}
 					<Button variant="contained" color="#B49D80" onClick={signOut}>
@@ -107,11 +107,11 @@ const Header = () => {
 								Safety
 							</MenuItem>
 
-							<MenuItem component={Link} to="/bloodhound" onClick={handleClose}>
+							<MenuItem component={Link} to="/rathound" onClick={handleClose}>
 								Hound
 							</MenuItem>
-							<MenuItem component={Link} to="/soldierradio" onClick={handleClose}>
-								Soldier Radio
+							<MenuItem component={Link} to="/radio" onClick={handleClose}>
+								Radio
 							</MenuItem>
 							<MenuItem component={Link} to="/MajorComps" onClick={handleClose}>
 								Components

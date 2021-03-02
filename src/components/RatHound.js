@@ -35,7 +35,7 @@ const useStyles = makeStyles(theme => ({
 	}
 }));
 
-function BloodHound() {
+function RatHound() {
 	const classes = useStyles();
 	return (
 		// <Paper>
@@ -74,4 +74,4 @@ function BloodHound() {
 	);
 }
 
-export default BloodHound;
+export default RatHound;

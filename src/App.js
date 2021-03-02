@@ -11,7 +11,7 @@ import './App.css';
 import Header from './header/Header';
 import About from './components/About';
 import Safety from './components/Safety';
-import BloodHound from './components/BloodHound';
+import RatHound from './components/RatHound';
 import SoldierRadio from './components/SoldierRadio';
 import Home from './components/Home';
 
@@ -30,7 +30,7 @@ function App() {
 				<Route exact path="/" component={Home} />
 				<Route path="/About" component={About} />
 				<Route path="/Safety" component={Safety} />
-				<Route path="/BloodHound" component={BloodHound} />
+				<Route path="/RatHound" component={RatHound} />
 				<Route path="/SoldierRadio" component={SoldierRadio} />
 				<Route path="/MajorComps" component={MajorComps} />
 			</Switch>
