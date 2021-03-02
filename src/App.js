@@ -13,6 +13,7 @@ import About from './components/About';
 import Safety from './components/Safety';
 import BloodHound from './components/BloodHound';
 import SoldierRadio from './components/SoldierRadio';
+import Home from './components/Home';
 
 //Scenes
 
@@ -26,6 +27,7 @@ function App() {
 			<Header />
 
 			<Switch>
+				<Route exact path="/" component={Home} />
 				<Route path="/About" component={About} />
 				<Route path="/Safety" component={Safety} />
 				<Route path="/BloodHound" component={BloodHound} />
