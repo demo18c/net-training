@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'wouter';
+
+//MUI
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -10,8 +12,10 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import Button from '@material-ui/core/Button';
 
-import { AmplifySignOut } from '@aws-amplify/ui-react';
+//AWS
 import { Auth } from 'aws-amplify';
+
+import Ivas from '../images/ivas.png';
 
 const useStyles = makeStyles(theme => ({
 	root: {
@@ -52,7 +56,11 @@ const Header = () => {
 
 	return (
 		<div className={classes.root}>
-			<AppBar position="sticky" style={{ background: '#B49D80', boxShadow: 'none' }}>
+			<AppBar
+				title={<img src="../images/ivas.png" />}
+				position="sticky"
+				style={{ background: '#B49D80', boxShadow: 'none' }}
+			>
 				<Toolbar>
 					<Typography align="left" variant="h6" className={classes.title}>
 						IVAS
