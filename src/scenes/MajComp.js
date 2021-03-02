@@ -4,8 +4,8 @@ import { Canvas } from 'react-three-fiber';
 import { OrbitControls, Environment, Plane, Sky, Stars } from '@react-three/drei';
 
 import TRX2 from '../models/TRX2RX';
-import Tent from '../models/Scene';
-import SkyBox from './SkyBox';
+import Model from '../models/Scene';
+// import SkyBox from './SkyBox';
 // import Floor from '../models/Floor';
 
 const MajorComponents = () => {
@@ -21,12 +21,12 @@ const MajorComponents = () => {
 				sunPosition={[0, 0.5, 0]}
 				/> */}
 				{/* <Stars /> */}
-				<SkyBox />
+				{/* <SkyBox /> */}
 				<TRX2 position={[-3, -2, 0]} />
-				<Plane position={[0, -5, 0]} args={[100, 100]} attach="material" rotation={[-Math.PI / 2, 0, 0]}>
+				{/* <Plane position={[0, -5, 0]} args={[100, 100]} attach="material" rotation={[-Math.PI / 2, 0, 0]}>
 					<meshBasicMaterial color="#fff" />
-				</Plane>
-				<Tent rotation={[0, Math.PI / 2, 0]} scale={[20, 20, 20]} />
+				</Plane> */}
+				<Model position={[0, 50, 0]} scale={[1000, 1000, 1000]} />
 			</Suspense>
 		</Canvas>
 	);

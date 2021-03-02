@@ -16,8 +16,6 @@ import Button from '@material-ui/core/Button';
 //AWS
 import { Auth } from 'aws-amplify';
 
-import Ivas from '../images/ivas.png';
-
 const useStyles = makeStyles(theme => ({
 	root: {
 		flexGrow: 1
