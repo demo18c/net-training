@@ -22,7 +22,8 @@ const useStyles = makeStyles(theme => ({
 		flexGrow: 1
 	},
 	menuButton: {
-		marginRight: theme.spacing(4)
+		marginRight: theme.spacing(4),
+		marginLeft: theme.spacing(6)
 	},
 	title: {
 		flexGrow: 1
@@ -63,7 +64,7 @@ const Header = () => {
 			>
 				<Toolbar>
 					<Typography align="left" variant="h6" className={classes.title}>
-						IVAS
+						"S"-VAS
 					</Typography>
 					{/* <AmplifySignOut button-text="Custom Text" /> */}
 					<Button variant="contained" color="#B49D80" onClick={signOut}>
