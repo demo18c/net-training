@@ -51,11 +51,11 @@ body {
 	background-image: url(./images/background.jpg);
 }
 
-.bg {
+/* .bg {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-}
+} */
 
 .top h1 {
 	color: white;

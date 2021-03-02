@@ -109,6 +109,9 @@ const Header = () => {
 							<MenuItem component={Link} to="/soldierradio" onClick={handleClose}>
 								Soldier Radio
 							</MenuItem>
+							<MenuItem component={Link} to="/MajorComps" onClick={handleClose}>
+								TRX2RX
+							</MenuItem>
 						</Menu>
 					</>
 				</Toolbar>

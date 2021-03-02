@@ -12,19 +12,25 @@ import About from './components/About';
 import Safety from './components/Safety';
 import BloodHound from './components/BloodHound';
 import SoldierRadio from './components/SoldierRadio';
+
+//Scenes
+
+import MajorComps from './scenes/MajComp';
+
 Amplify.configure(awsconfig);
 
 function App() {
 	return (
-		<div className="App">
+		<>
 			<Header />
 			<Switch>
 				<Route path="/About" component={About} />
 				<Route path="/Safety" component={Safety} />
 				<Route path="/BloodHound" component={BloodHound} />
 				<Route path="/SoldierRadio" component={SoldierRadio} />
+				<Route path="/MajorComps" component={MajorComps} />
 			</Switch>
-		</div>
+		</>
 	);
 }
 
