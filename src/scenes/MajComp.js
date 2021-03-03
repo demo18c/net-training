@@ -10,8 +10,8 @@ import Model from '../models/Scene';
 
 const MajorComponents = () => {
 	return (
-		<Canvas pixelRatio={[1, 2]} camera={{ position: [-15, 0, 0] }}>
-			<OrbitControls maxPolarAngle={Math.PI / 2} />
+		<Canvas pixelRatio={[1, 2]} camera={{ position: [-90, 0, 0], fov: 60 }}>
+			<OrbitControls maxPolarAngle={Math.PI / 2} maxZoom={60} minZoom={40} />
 			<ambientLight intensity={1} />
 			<pointLight position={[10, 10, 10]} />
 			{/* <axisHelper /> */}
@@ -22,11 +22,11 @@ const MajorComponents = () => {
 				/> */}
 				{/* <Stars /> */}
 				{/* <SkyBox /> */}
-				<TRX2 position={[-3, -2, 0]} />
+				<TRX2 position={[-65, -4.1, -3]} />
 				{/* <Plane position={[0, -5, 0]} args={[100, 100]} attach="material" rotation={[-Math.PI / 2, 0, 0]}>
 					<meshBasicMaterial color="#fff" />
 				</Plane> */}
-				<Model position={[0, 30, 0]} scale={[1000, 1000, 1000]} />
+				<Model rotation={[0, Math.PI * 2.1, 0]} position={[0, -10, 0]} scale={[0.1, 0.1, 0.1]} />
 			</Suspense>
 		</Canvas>
 	);
