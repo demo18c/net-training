@@ -11,7 +11,7 @@ import Model from '../models/Scene';
 const MajorComponents = () => {
 	return (
 		<Canvas pixelRatio={[1, 2]} camera={{ position: [-15, 0, 0] }}>
-			{/* <OrbitControls /> */}
+			<OrbitControls maxPolarAngle={Math.PI / 2} />
 			<ambientLight intensity={1} />
 			<pointLight position={[10, 10, 10]} />
 			{/* <axisHelper /> */}
@@ -26,7 +26,7 @@ const MajorComponents = () => {
 				{/* <Plane position={[0, -5, 0]} args={[100, 100]} attach="material" rotation={[-Math.PI / 2, 0, 0]}>
 					<meshBasicMaterial color="#fff" />
 				</Plane> */}
-				<Model position={[0, 50, 0]} scale={[1000, 1000, 1000]} />
+				<Model position={[0, 30, 0]} scale={[1000, 1000, 1000]} />
 			</Suspense>
 		</Canvas>
 	);
