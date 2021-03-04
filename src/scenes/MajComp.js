@@ -11,7 +11,7 @@ import Model from '../models/Scene';
 const MajorComponents = () => {
 	return (
 		<Canvas pixelRatio={[1, 2]} camera={{ position: [-90, 0, 0], fov: 60 }}>
-			<OrbitControls maxPolarAngle={Math.PI / 2} maxZoom={60} minZoom={40} />
+			<OrbitControls maxPolarAngle={Math.PI / 2} enableZoom={true} maxZoom={1} minZoom={3} />
 			<ambientLight intensity={1} />
 			<pointLight position={[10, 10, 10]} />
 			{/* <axisHelper /> */}

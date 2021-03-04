@@ -8,12 +8,14 @@ import './App.css';
 // import { BackGround } from './styles';
 
 //components
-import Header from './header/Header';
+
 import About from './components/About';
 import Safety from './components/Safety';
 import RatHound from './components/RatHound';
 import SoldierRadio from './components/SoldierRadio';
 import Home from './components/Home';
+
+import SideBar from './header/Sidebar';
 
 //Scenes
 
@@ -24,8 +26,7 @@ Amplify.configure(awsconfig);
 function App() {
 	return (
 		<>
-			<Header />
-
+			<SideBar />
 			<Switch>
 				<Route exact path="/" component={Home} />
 				<Route path="/About" component={About} />

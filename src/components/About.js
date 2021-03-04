@@ -5,8 +5,6 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 
-import bgImage from '../images/background.jpg';
-
 const useStyles = makeStyles(theme => ({
 	mainFeaturedPost: {
 		position: 'relative',
@@ -39,7 +37,7 @@ function About() {
 	const classes = useStyles();
 	return (
 		// <Paper>
-		<div style={{ backgroundImage: `url(${bgImage})` }}>
+		<div>
 			<Grid container className="top">
 				<Grid item md={6}>
 					<div

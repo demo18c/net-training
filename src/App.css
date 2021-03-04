@@ -45,16 +45,16 @@ canvas {
 	width: 100%;
 }
 
-body {
+/* body {
 	background-image: url(./images/background.jpg);
-}
+} */
 
-.top {
+/* .top {
 	background-image: url(./images/background.jpg) no-repeat;
 	background-size: cover;
 	min-width: 100%;
 	min-height: 100%;
-}
+} */
 
 /* .bg {
 	position: absolute;
